@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>Login</title>
+</head>
+<body>
+
+    <section class="login-section">
+
+        <div class="login-section__img">
+            <div class="login-section__img--form">
+                <h2>Bienvenido</h2>
+                <div class="toggle-login-register">
+                    <div class="border-bottom">
+                        <span>Regístrate</span>
+                    </div>
+                    
+                    <div class="border-bottom">
+                        <span>Iniciar Sesión</span>
+                    </div>
+
+                </div>
+
+
+                <form action="" class="form-login">
+                    <label for="user">
+                        <ion-icon class="icon-user" name="person-outline"></ion-icon>
+                        <input type="text" placeholder="Usuario" id="user" name="user">
+                    </label>
+                    
+                    <label for="password">
+                        <ion-icon class="icon-lock" name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder="Contraseña">
+                        <ion-icon class="icon-eye-off" name="eye-off-outline"></ion-icon>
+                        <ion-icon class="icon-eye-on" name="eye-outline"></ion-icon>
+                        <a href="#"><small>¿Has olvidado tu contraseña? <span>Presiona aquí</span></small></a>
+                    </label>
+
+                    <label for="submit">
+                        <input type="submit" value="Iniciar Sesión">
+                        <ion-icon class="icon-chevron-right" name="chevron-forward-outline"></ion-icon>
+                        <a href="#" target="_blank">¿Aún no tienes cuenta? <span>Registrate</span></a>
+                    </label>
+                </form>
+            </div>
+        </div>
+        
+        
+    </section>
+</body>
+</html>

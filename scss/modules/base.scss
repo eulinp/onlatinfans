@@ -1,0 +1,138 @@
+/* FONTS*/
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('fonts/Segoe UI.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('fonts/Segoe UI Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('fonts/Segoe UI Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('fonts/Segoe UI Bold Italic.woff') format('woff');
+    }
+/*VARIABLES*/
+
+$header-height: 6rem;
+
+/*COLORES*/
+    $first-color: #7135F2;
+    $first-color-two: #5116ce;
+    $second-color: #05ADD2;
+    $third-color: #05DBF2;
+    $text-color: #B7B7B7;
+    $bg-color: #141313;
+    $white-color: #fff;
+    $icon-color: #ED4C50;
+
+/*FUENTE Y TIPOGRAFÍA*/
+
+
+    $body-font: 'Segoe UI Regular';
+    $logo-font: 'Segoe UI Bold';
+    $biggest-font-size: 8rem;
+    $big-font-size: 4rem;
+    $h2-font-size: 1.25rem;
+    $normal-font-size: 0.93rem;
+    $small-font-size: 0.75rem;
+    $smaller-font-size: 0.5rem;
+
+
+
+
+/*Z INDEX*/
+    $z-back: -10;
+    $z-normal: 1;
+    $z-tooltip: 10;
+    $z-fixed: 100;
+    $z-modal: 1000;
+
+/*------BASE------*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $body-font;
+    font-weight: initial;
+    //background-color: $bg-color;
+}
+
+h1,h2,h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+p{
+    font-size: $normal-font-size;
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px solid $white-color;
+    font-size: $h2-font-size;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0);
+    color: $text-color;
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+input::placeholder {
+    color: #cccccc;
+    font-size: $h2-font-size;
+}
+
+
+.hr{
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+
+    svg{
+        width: 100%;
+    }
+}
+
+
+/*CONTENT*/
+.d-block{
+    display: block;
+}
+.d-inline{
+    display: inline-block;
+}
