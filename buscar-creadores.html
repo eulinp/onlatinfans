@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
-
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/elderCarrousel.js"></script>
     <script src="js/gsap.min.js"></script>
-    <title>Inicio</title>
+    <title>Buscar Creadores</title>
 </head>
 
 <body>
@@ -42,6 +42,7 @@
     </header>
 
     <section class="creadores-section">
+
         <div class="creadores-section__img">
             <svg class="creadores-section__img--poligono1" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
                 <path id="Polígono_9" data-name="Polígono 9" d="M207.506,32.463a70,70,0,0,1,84.989,0L461.2,161.341a70,70,0,0,1,24.385,76.293L419.753,450.667A70,70,0,0,1,352.874,500H147.126a70,70,0,0,1-66.88-49.333L14.416,237.634A70,70,0,0,1,38.8,161.341Z" fill="#05dbf2" opacity="0.4"/>
@@ -54,9 +55,328 @@
             </svg>
         </div>
 
+        <div class="creadores-section__buscar-creadores">
+            <h2 class="creadores-section__buscar-creadores--title">Conoce tu creador de contenido ideal</h2>
+            <h4 class="creadores-section__buscar-creadores--description">Apoya a las Startups Latinas y obtén un servicio similar al de OnlyFans, pero con métodos de pago fáciles y latinos con todo el contenido en español.</h4>
+            <div class="creadores-section__buscar-creadores__selects">
+                <select name="categorias" id="categorias">
+                    <option value="">Todas las categorías</option>
+                    <option value="">Camlive</option>
+                    <option value="">Escorts</option>
+                    <option value="">Influencers</option>
+                    <option value="">Instagrammer</option>
+                    <option value="">Modelos</option>
+                    <option value="">Youtuber</option>
+                    <option value="">Otros</option>
+                </select>
+
+                <select name="categorias" id="categorias">
+                    <option value="">Default: Popularidad</option>
+                    <option value="">Mas publicaciones</option>
+                    <option value="">Mas subscriptores</option>
+                    <option value="">Alfabéticamente</option>
+                    <option value="">Fecha de registro</option>
+                </select>
+
+            </div>
+        </div>
 
     </section>
 
+    <section class="conoce-creadores-section">
+        <h2 class="conoce-creadores-section--title">Conoce algunos de nuestros creadores onlatinfans</h2>
+        <div class="conoce-creadores-section__cards">
+            <div class="conoce-creadores-section__cards--card">
+                <img class="conoce-creadores-section__cards--card--img" src="img/foto1.jpg" alt="">
+                <div class="conoce-creadores-section__cards--card--datos">
+                    
+                    <div class="conoce-creadores-section__cards--card--datos--img">
+                        <img src="img/foto2.jpg" alt="">
+                    </div>
+                        
+                    
+
+                    <div class="conoce-creadores-section__cards--card--datos--description">
+                        <h3>Christina Wocinte</h3>
+                        <h5>Blogger</h5>
+                        <div class="span">
+                            <span>6,954 Seguidores</span>
+                            <span> • </span>
+                            <span>1,544 Seguidos</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="conoce-creadores-section__cards--card">
+                <img class="conoce-creadores-section__cards--card--img" src="img/foto3.jpg" alt="">
+                <div class="conoce-creadores-section__cards--card--datos">
+                    
+                    <div class="conoce-creadores-section__cards--card--datos--img">
+                        <img src="img/foto4.jpg" alt="">
+                    </div>
+                        
+                    
+
+                    <div class="conoce-creadores-section__cards--card--datos--description">
+                        <h3>Christina Wocinte</h3>
+                        <h5>Blogger</h5>
+                        <div class="span">
+                            <span>6,954 Seguidores</span>
+                            <span> • </span>
+                            <span>1,544 Seguidos</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="conoce-creadores-section__cards--card">
+                <img class="conoce-creadores-section__cards--card--img" src="img/foto5.jpg" alt="">
+                <div class="conoce-creadores-section__cards--card--datos">
+                    
+                    <div class="conoce-creadores-section__cards--card--datos--img">
+                        <img src="img/foto6.jpg" alt="">
+                    </div>
+                        
+                    
+
+                    <div class="conoce-creadores-section__cards--card--datos--description">
+                        <h3>Christina Wocinte</h3>
+                        <h5>Blogger</h5>
+                        <div class="span">
+                            <span>6,954 Seguidores</span>
+                            <span> • </span>
+                            <span>1,544 Seguidos</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="perfiles-creadores-section">
+        <div class="perfiles-creadores-section__perfiles">
+            <div class="carousel perfiles-creadores-section__perfiles__cards">
+
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Sandra Valera</h2></a>
+                        <a href=""><p>Youtuber</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Oscar Layas</h2></a>
+                        <a href=""><p>Gamer</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Vivian Andrade</h2></a>
+                        <a href=""><p>Blogger</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Jhon Doe</h2></a>
+                        <a href=""><p>Influencer</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Max Payne</h2></a>
+                        <a href=""><p>Instagrammer</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
+                    <div class="perfiles-creadores-section__perfiles__cards--card--img">
+                        <a href="#">
+                            <img src="img/foto6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="perfiles-creadores-section__perfiles__cards--card--content">
+                        <a href=""><h2>Gordon Freeman</h2></a>
+                        <a href=""><p>Cientifico</p></a>
+                        <div class="acordion">
+                            <div class="redes">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
+                        </div>
+                        <div class="chevron-toggle-acordion">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-contacto">
+
+        <svg class="section-contacto--backfooter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 698.225">
+            <g id="Grupo_772" data-name="Grupo 772" transform="translate(0 -4559.775)">
+              <path id="Trazado_847" data-name="Trazado 847" d="M5827.033,7453.87s254.039-181.621,580.278,27.367,411.81,121.91,513.426,64.687,208.579-82.1,294.15-44.783,187.187,171.669,352.981,136.837,179.164-92.054,179.164-92.054v492.615h-1920Z" transform="translate(-5827.033 -2780.539)" fill="#05aff2" opacity="0.59"/>
+              <path id="Trazado_848" data-name="Trazado 848" d="M7747.031,7459.91s-299.245-161.515-499.8,21.48-494.189,184.951-579.76,90.763-236.346-117.577-308.292-61.112-200.3,212.547-366.1,174.872-166.047-126.433-166.047-126.433v532.835h1920Z" transform="translate(-5827.031 -2834.315)" fill="#05aff2" opacity="0.59"/>
+            </g>
+          </svg>
+
+
+        <h2 class="section-contacto--title">Contacto</h2>
+        <div class="section-contacto__info">
+            <div class="section-contacto__info--redes">
+                <div class="section-contacto__info--redes--red">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+                <h3>Síguenos en nuestras redes sociales</h3>
+            </div>
+            <form class="section-contacto__info--form">
+                <h2>Ponte en contacto con nosotros</h2>
+                <label for="name">
+                    <span>Escribe tu nombre completo</span>
+                    <input type="text" placeholder="Nombre completo" id="name" name="name">
+                </label>
+                <label for="email">
+                    <span>Escribe tu E-mail</span>
+                    <input type="email" placeholder="Correo Electrónico" id="email" name="email">
+                </label>
+                <label for="asunto">
+                    <span>Asunto</span>
+                    <textarea name="asunto" id="asunto" rows="10"></textarea>
+                </label>
+                <label for="enviar">
+                    <input type="submit" value="Enviar">
+                </label>
+            </form>
+        </div>
+
+        <div class="section-contacto__term">
+            <div class="section-contacto__term--list">
+                <ul>
+                    <li><a href="">Políticas de privacidad</a></li>
+                    <li><a href="">Términos de servicios</a></li>
+                    <li><a href="">Reportar Abusos</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="section-contacto__term--copyright">
+                © 2021 <a href="https://onlatinfans.com">onlatinfans.com</a>  | Todos los derechos reservados
+            </div>
+        </div>
+
+          
+    </section>
     <script src="js/main.js"></script>
 </body>
 

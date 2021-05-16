@@ -1,6 +1,171 @@
-<svg class="section-contacto--backfooter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 698.225">
-    <g id="Grupo_772" data-name="Grupo 772" transform="translate(0 -4559.775)">
-      <path id="Trazado_847" data-name="Trazado 847" d="M5827.033,7453.87s254.039-181.621,580.278,27.367,411.81,121.91,513.426,64.687,208.579-82.1,294.15-44.783,187.187,171.669,352.981,136.837,179.164-92.054,179.164-92.054v492.615h-1920Z" transform="translate(-5827.033 -2780.539)" fill="#05aff2" opacity="0.59"/>
-      <path id="Trazado_848" data-name="Trazado 848" d="M7747.031,7459.91s-299.245-161.515-499.8,21.48-494.189,184.951-579.76,90.763-236.346-117.577-308.292-61.112-200.3,212.547-366.1,174.872-166.047-126.433-166.047-126.433v532.835h1920Z" transform="translate(-5827.031 -2834.315)" fill="#05aff2" opacity="0.59"/>
-    </g>
-  </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/Draggable.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+</head>
+<body>
+
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  font-family: Roboto, sans-serif;
+  background: #e2e0e0;
+}
+
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.92);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 100%;
+  transform-origin: center bottom;
+}
+
+.picker {
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+  </style>
+
+<main>  
+  <div id="picker" class="picker">
+    <div class="cell">
+      <div class="cell-content">Card 1</div>
+    </div>     
+    <div class="cell">
+      <div class="cell-content">Card 2</div>
+    </div>  
+    <div class="cell">
+      <div class="cell-content">Card 3</div>
+    </div>  
+    <div class="cell">
+      <div class="cell-content">Card 4</div>
+    </div>  
+    <div class="cell">
+      <div class="cell-content">Card 5</div>
+    </div>  
+    <div class="cell">
+      <div class="cell-content">Card 6</div>
+    </div> 
+    <div class="cell">
+      <div class="cell-content">Card 7</div>
+    </div> 
+    <div class="cell">
+      <div class="cell-content">Card 8</div>
+    </div> 
+  </div>  
+</main>
+
+
+  <script>
+    TweenLite.defaultEase = Linear.easeNone;
+
+var picker = document.querySelector(".picker");
+var cells = document.querySelectorAll(".cell");
+var proxy = document.createElement("div");
+
+var cellWidth = 450;
+//var rotationX = 90;
+
+var numCells = cells.length;
+var cellStep = 1 / numCells;
+var wrapWidth = cellWidth * numCells;
+
+var baseTl = new TimelineMax({ paused: true });
+
+TweenLite.set(picker, {
+  //perspective: 1100,
+  width: wrapWidth - cellWidth
+});
+
+for (var i = 0; i < cells.length; i++) {  
+  initCell(cells[i], i);
+}
+
+var animation = new TimelineMax({ repeat: -1, paused: true })
+  .add(baseTl.tweenFromTo(1, 2))
+
+var draggable = new Draggable(proxy, {  
+  // allowContextMenu: true,  
+  type: "x",
+  trigger: picker,
+  throwProps: true,
+  onDrag: updateProgress,
+  onThrowUpdate: updateProgress,
+  snap: { 
+    x: snapX
+  },
+  onThrowComplete: function(){
+    console.log("onThrowComplete");
+    //TODO: animation that inject selected card title
+  }
+});
+
+function snapX(x) {
+  return Math.round(x / cellWidth) * cellWidth;
+}
+
+function updateProgress() {  
+  animation.progress(this.x / wrapWidth);
+}
+
+function initCell(element, index) {
+  
+  TweenLite.set(element, {
+    width: cellWidth,
+    scale: 0.6,
+    //rotationX: rotationX,
+    x: -cellWidth
+  });
+  
+  var tl = new TimelineMax({ repeat: 1 })
+    .to(element, 1, { x: "+=" + wrapWidth/*, rotationX: -rotationX*/ }, 0)
+    .to(element, cellStep, { color: "#009688", scale: 1, repeat: 1, yoyo: true }, 0.5 - cellStep)
+  
+  baseTl.add(tl, i * -cellStep);
+}
+  </script>
+</body>
+</html>
+
+
+
+
