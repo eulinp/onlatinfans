@@ -26,6 +26,10 @@
 }
 /*VARIABLES*/
 /*COLORES*/
+.first-color {
+  color: #7135F2;
+}
+
 /*FUENTE Y TIPOGRAFÍA*/
 /*Z INDEX*/
 /*------BASE------*/
@@ -1013,7 +1017,7 @@ input::placeholder {
     font-size: 8rem;
   }
   .main-section__content--info-title {
-    padding-top: 3rem;
+    padding-top: 6rem;
     font-family: "Segoe UI Bold";
     font-size: 4rem;
     line-height: 1;
@@ -1426,6 +1430,48 @@ input::placeholder {
   color: #fff;
 }
 
+.mapa-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.mapa-section__content {
+  width: 100%;
+  margin-top: 3rem;
+}
+.mapa-section__content--title {
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Segoe UI Bold";
+}
+.mapa-section__content--description {
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 2rem;
+}
+.mapa-section__img {
+  width: 90%;
+}
+.mapa-section__img .mapa {
+  width: 100%;
+  height: auto;
+}
+
+.influencer-section {
+  margin-top: 3rem;
+  width: 100%;
+  overflow: scroll;
+}
+.influencer-section .grafico {
+  width: auto;
+  height: 40vh;
+}
+
 @media only screen and (min-width: 768px) {
   .creadores-section {
     position: relative;
@@ -1663,6 +1709,482 @@ input::placeholder {
   }
   .perfiles-creadores-section__perfiles__cards--card--content .chevron-toggle-acordion:hover ion-icon {
     color: #fff;
+  }
+
+  .mapa-section {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+  .mapa-section__content {
+    width: 50%;
+    margin-top: -5rem;
+  }
+  .mapa-section__content--title {
+    width: 70%;
+  }
+  .mapa-section__content--description {
+    width: 70%;
+    padding: 2rem;
+  }
+  .mapa-section__img {
+    width: 40%;
+  }
+  .mapa-section__img .mapa {
+    width: 100%;
+    height: auto;
+  }
+
+  .influencer-section {
+    width: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+  }
+  .influencer-section .grafico {
+    width: 100%;
+    height: auto;
+  }
+}
+.ser-creador-section {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  overflow-x: clip;
+}
+.ser-creador-section__content {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.ser-creador-section__content--back-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+  font-family: "Segoe UI Bold";
+  font-size: 4rem;
+  color: #7135f22b;
+}
+.ser-creador-section__content--info-title {
+  width: 100%;
+  padding-top: 3rem;
+  font-family: "Segoe UI Bold";
+  font-size: 2rem;
+  line-height: 1;
+}
+.ser-creador-section__content--info-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ser-creador-section__content--info-buttons .button {
+  padding: 0.8rem 1rem;
+  border-radius: 3rem;
+  border: none;
+  color: #fff;
+}
+.ser-creador-section__content--info-buttons .button-sercreador {
+  background-color: #7135F2;
+}
+.ser-creador-section__img {
+  width: 100%;
+  height: 30vh;
+  z-index: -10;
+}
+.ser-creador-section__img--principal {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 10%;
+  width: 50%;
+}
+.ser-creador-section__img--poligono1 {
+  position: absolute;
+  top: -60%;
+  transform: rotate(8deg);
+  right: -5%;
+  z-index: -10;
+  width: 65%;
+  height: auto;
+}
+.ser-creador-section__img--poligono2 {
+  position: absolute;
+  top: -60%;
+  transform: rotate(8deg);
+  right: -5%;
+  z-index: -10;
+  width: 63%;
+  height: auto;
+}
+.ser-creador-section__img--poligono3 {
+  position: absolute;
+  top: -60%;
+  transform: rotate(8deg);
+  right: -5%;
+  z-index: -10;
+  width: 60%;
+  height: auto;
+}
+
+.como-funciona-section {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  overflow-x: clip;
+}
+.como-funciona-section__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.como-funciona-section__cards .poligono-fondo {
+  position: absolute;
+  z-index: -10;
+  right: 0;
+  transform: rotate(120deg);
+  bottom: -4rem;
+}
+.como-funciona-section__cards--card {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 1.5rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.como-funciona-section__cards--card--icon {
+  padding: 2rem;
+}
+.como-funciona-section__cards--card--title {
+  text-align: center;
+}
+.como-funciona-section__cards--card--description {
+  line-height: 2;
+}
+.como-funciona-section__cards--card:hover {
+  transform: scale(1.1);
+}
+
+.grafico-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+.grafico-section__content {
+  width: 90%;
+  margin-top: 3rem;
+}
+.grafico-section__content--title {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Segoe UI Bold";
+}
+.grafico-section__img {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.grafico-section__img .anychart-credits {
+  display: none;
+}
+.grafico-section__img .tarifas {
+  width: 100%;
+  height: auto;
+}
+.grafico-section__buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.grafico-section__buttons div {
+  width: 25%;
+}
+.grafico-section__buttons div p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.grafico-section__buttons div input {
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+.grafico-section__total {
+  width: 80%;
+  margin: auto;
+  background: #05ADD2;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.grafico-section__total--title {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.grafico-section__total p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tarifas-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.tarifas-section__content {
+  width: 100%;
+  margin-top: 3rem;
+}
+.tarifas-section__content--title {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Segoe UI Bold";
+}
+.tarifas-section__img {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.tarifas-section__img .tarifas {
+  width: 100%;
+  height: auto;
+}
+.tarifas-section__description {
+  font-weight: bold;
+  text-align: right;
+  color: #00000093;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .ser-creador-section {
+    flex-wrap: nowrap;
+  }
+  .ser-creador-section__content {
+    padding-left: 3rem;
+  }
+  .ser-creador-section__content--back-title {
+    left: 0%;
+    top: -10%;
+    font-family: "Segoe UI Bold";
+    font-size: 8rem;
+  }
+  .ser-creador-section__content--info-title {
+    padding-top: 6rem;
+    font-family: "Segoe UI Bold";
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .ser-creador-section__content--info-buttons {
+    justify-content: center;
+  }
+  .ser-creador-section__content--info-buttons .button {
+    margin: 2rem;
+  }
+  .ser-creador-section__content--info-buttons .button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .ser-creador-section__img {
+    width: 100%;
+    height: 85vh;
+    z-index: -10;
+  }
+  .ser-creador-section__img--principal {
+    position: absolute;
+    z-index: 1;
+    right: 15%;
+    top: 0%;
+    width: 24%;
+  }
+  .ser-creador-section__img--poligono1 {
+    position: absolute;
+    top: -60%;
+    transform: rotate(8deg);
+    right: -5%;
+    z-index: -10;
+    width: 65%;
+    height: auto;
+  }
+  .ser-creador-section__img--poligono2 {
+    position: absolute;
+    top: -60%;
+    transform: rotate(8deg);
+    right: -5%;
+    z-index: -10;
+    width: 63%;
+    height: auto;
+  }
+  .ser-creador-section__img--poligono3 {
+    position: absolute;
+    top: -60%;
+    transform: rotate(8deg);
+    right: -5%;
+    z-index: -10;
+    width: 60%;
+    height: auto;
+  }
+
+  .como-funciona-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    overflow-x: clip;
+  }
+  .como-funciona-section__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  .como-funciona-section__cards .poligono-fondo {
+    position: absolute;
+    z-index: -10;
+    right: 0;
+    transform: rotate(120deg);
+    bottom: -4rem;
+  }
+  .como-funciona-section__cards--card {
+    max-width: 400px;
+    padding: 2rem;
+    margin: 1.5rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+  }
+  .como-funciona-section__cards--card--icon {
+    padding: 2rem;
+  }
+  .como-funciona-section__cards--card--title {
+    text-align: center;
+  }
+  .como-funciona-section__cards--card--description {
+    line-height: 2;
+  }
+  .como-funciona-section__cards--card:hover {
+    transform: scale(1.1);
+  }
+
+  .grafico-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  .grafico-section__content {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .grafico-section__content--title {
+    width: 80%;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Segoe UI Bold";
+  }
+  .grafico-section__img {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .grafico-section__img .anychart-credits {
+    display: none;
+  }
+  .grafico-section__img .tarifas {
+    width: 100%;
+    height: auto;
+  }
+  .grafico-section__buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .grafico-section__buttons div {
+    width: 25%;
+  }
+  .grafico-section__buttons div p {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .grafico-section__buttons div input {
+    width: 100%;
+  }
+  .grafico-section__total {
+    width: 80%;
+    margin: auto;
+    background: #05ADD2;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .grafico-section__total--title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+  }
+  .grafico-section__total p {
+    text-align: center;
+  }
+
+  .tarifas-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  .tarifas-section__content {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .tarifas-section__content--title {
+    width: 80%;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Segoe UI Bold";
+  }
+  .tarifas-section__img {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .tarifas-section__img .tarifas {
+    width: 100%;
+    height: auto;
+  }
+  .tarifas-section__description {
+    font-weight: bold;
+    text-align: right;
+    color: #00000093;
+    width: 60%;
+    padding: 2rem;
   }
 }
 

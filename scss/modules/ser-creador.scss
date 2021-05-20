@@ -1,0 +1,507 @@
+.ser-creador-section{
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    overflow-x: clip;
+
+    &__content{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+        
+
+        &--back-title{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 20%;
+            font-family: $logo-font;
+            font-size: $big-font-size;
+            color: #7135f22b;
+        }
+
+        &--info-title{
+            width: 100%;
+            padding-top: 3rem;
+            font-family: $logo-font;
+            font-size: 2rem;
+            line-height: 1;
+        }
+
+        &--info-buttons{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .button{
+                padding: .8rem 1rem;
+                border-radius: 3rem;
+                border: none;
+                color: $white-color;
+            }
+
+            .button-sercreador{
+                background-color: $first-color;
+            }
+            
+        }
+
+    }
+
+    &__img{
+        width: 100%;
+        height: 30vh;
+        z-index: $z-back;
+        
+
+        &--principal{
+            position: absolute;
+            z-index: $z-normal;
+            right: 0;
+            top: 10%;
+            width: 50%;
+            
+        }
+        &--poligono1{
+            position: absolute;
+                top: -60%;
+                transform: rotate(8deg);
+                right: -5%;
+                z-index: -10;
+                width: 65%;
+                height: auto;
+            
+        }
+        &--poligono2{
+            position: absolute;
+                top: -60%;
+                transform: rotate(8deg);
+                right: -5%;
+                z-index: -10;
+                width: 63%;
+                height: auto;
+        }
+        &--poligono3{
+            position: absolute;
+                top: -60%;
+                transform: rotate(8deg);
+                right: -5%;
+                z-index: -10;
+                width: 60%;
+                height: auto;
+            
+        }
+    }
+}
+
+.como-funciona-section{
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    overflow-x: clip;
+
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        & .poligono-fondo{
+            position: absolute;
+            z-index: $z-back;
+            right: 0;
+            transform: rotate(120deg);
+            bottom: -4rem;
+
+        }
+
+        &--card{
+            max-width: 400px;
+            padding: 2rem;
+            margin: 1.5rem;
+            background-color: $white-color;
+            border-radius: 3rem;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+            &--icon{
+                padding: 2rem;
+            }
+
+            &--title{
+                text-align: center;
+            }
+
+            &--description{
+                line-height: 2;
+            }
+        }
+        &--card:hover{
+           transform: scale(1.1);
+        }
+    }
+}
+
+
+.grafico-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    &__content{
+        width: 90%;
+        margin-top: 3rem;
+        &--title{
+            width: 80%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $logo-font;
+        }
+    }
+
+    &__img{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+
+        .anychart-credits{
+            display: none;
+        }
+        & .tarifas{
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+
+    &__buttons{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        & div{
+            width: 25%;
+            p{
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            input{
+                margin: 0 0 2rem 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__total{
+        width: 80%;
+        margin: auto;
+        background: $second-color;
+        padding: 1rem;
+        border-radius: 2rem;
+        &--title{
+            font-size: 2rem;
+            text-align: center;
+            color: $white-color;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    
+}
+
+.tarifas-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    &__content{
+        width: 100%;
+        margin-top: 3rem;
+        &--title{
+            width: 80%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $logo-font;
+        }
+    }
+
+    &__img{
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+        & .tarifas{
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+
+    &__description{
+        font-weight: bold;
+        text-align: right;
+        color: #00000093;
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px){
+    .ser-creador-section{
+        
+        flex-wrap: nowrap;
+    
+       &__content{
+            padding-left: 3rem;
+            &--back-title{
+                left: 0%;
+                top: -10%;
+                font-family: $logo-font;
+                font-size: $biggest-font-size;
+            }
+    
+            &--info-title{
+                padding-top: 6rem;
+                font-family: $logo-font;
+                font-size: $big-font-size;
+                line-height: 1;
+            }
+    
+            &--info-buttons{
+                justify-content: center;
+    
+                .button{
+                    margin: 2rem;
+                }
+                .button:hover{
+                    transform: scale(1.1);
+                    transition: .5s;
+                }
+            }
+        }
+    
+        &__img{
+            width: 100%;
+                height: 85vh;
+                z-index: $z-back;
+            
+    
+            &--principal{
+                position: absolute;
+                z-index: $z-normal;
+                right: 15%;
+                top: 0%;
+                width: 24%;
+                
+            }
+            &--poligono1{
+                position: absolute;
+                    top: -60%;
+                    transform: rotate(8deg);
+                    right: -5%;
+                    z-index: -10;
+                    width: 65%;
+                    height: auto;
+                
+            }
+            &--poligono2{
+                position: absolute;
+                    top: -60%;
+                    transform: rotate(8deg);
+                    right: -5%;
+                    z-index: -10;
+                    width: 63%;
+                    height: auto;
+            }
+            &--poligono3{
+                position: absolute;
+                    top: -60%;
+                    transform: rotate(8deg);
+                    right: -5%;
+                    z-index: -10;
+                    width: 60%;
+                    height: auto;
+                
+            }
+        }
+    }
+    
+    .como-funciona-section{
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+        overflow-x: clip;
+    
+        &__cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            & .poligono-fondo{
+                position: absolute;
+                z-index: $z-back;
+                right: 0;
+                transform: rotate(120deg);
+                bottom: -4rem;
+    
+            }
+    
+            &--card{
+                max-width: 400px;
+                padding: 2rem;
+                margin: 1.5rem;
+                background-color: $white-color;
+                border-radius: 3rem;
+                border: none;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: .2s;
+                &--icon{
+                    padding: 2rem;
+                }
+    
+                &--title{
+                    text-align: center;
+                }
+    
+                &--description{
+                    line-height: 2;
+                }
+            }
+            &--card:hover{
+               transform: scale(1.1);
+            }
+        }
+    }
+    
+    
+    .grafico-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        &__content{
+            width: 100%;
+            margin-top: 3rem;
+            &--title{
+                width: 80%;
+                margin: auto;
+                font-size: 3rem;
+                text-align: center;
+                font-family: $logo-font;
+            }
+        }
+    
+        &__img{
+            width: 80%;
+            margin: auto;
+            margin-top: 2rem;
+    
+            .anychart-credits{
+                display: none;
+            }
+            & .tarifas{
+                width: 100%;
+                height: auto;
+                
+            }
+        }
+    
+        &__buttons{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            & div{
+                width: 25%;
+                p{
+                    font-weight: bold;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    
+        &__total{
+            width: 80%;
+            margin: auto;
+            background: $second-color;
+            padding: 2rem;
+            border-radius: 2rem;
+            &--title{
+                font-size: 2.5rem;
+                text-align: center;
+                color: $white-color;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        
+    }
+    
+    .tarifas-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        &__content{
+            width: 100%;
+            margin-top: 3rem;
+            &--title{
+                width: 80%;
+                margin: auto;
+                font-size: 3rem;
+                text-align: center;
+                font-family: $logo-font;
+            }
+        }
+    
+        &__img{
+            width: 50%;
+            margin: auto;
+            margin-top: 2rem;
+            & .tarifas{
+                width: 100%;
+                height: auto;
+                
+            }
+        }
+    
+        &__description{
+            font-weight: bold;
+            text-align: right;
+            color: #00000093;
+            width: 60%;
+            padding: 2rem;
+        }
+    
+    
+    }
+    
+    
+}
+
