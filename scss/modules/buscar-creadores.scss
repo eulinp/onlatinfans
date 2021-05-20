@@ -493,8 +493,6 @@ overflow: scroll;
             &__cards{
                 display: flex;
                 justify-content: space-around;
-    
-                height: 75vh;
                 &--card:hover{
                     transform: scale(1.1);
                 }

@@ -167,21 +167,7 @@
         }
     }
 
-    &__img{
-        width: 80%;
-        margin: auto;
-        margin-top: 2rem;
-
-        .anychart-credits{
-            display: none;
-        }
-        & .tarifas{
-            width: 100%;
-            height: auto;
-            
-        }
-    }
-
+   
     &__buttons{
         margin-top: 2rem;
         display: flex;
@@ -412,20 +398,6 @@
             }
         }
     
-        &__img{
-            width: 80%;
-            margin: auto;
-            margin-top: 2rem;
-    
-            .anychart-credits{
-                display: none;
-            }
-            & .tarifas{
-                width: 100%;
-                height: auto;
-                
-            }
-        }
     
         &__buttons{
             display: flex;
