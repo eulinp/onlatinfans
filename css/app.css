@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /* FONTS*/
 @font-face {
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poiret One"), url("https://fonts.google.com/share?selection.family=Poiret%20One");
+}
+@font-face {
   font-family: "Segoe UI Regular";
   font-style: normal;
   font-weight: normal;
@@ -260,7 +266,7 @@ input::placeholder {
   flex-direction: column;
 }
 .nav__logo .logo-blanco {
-  width: 6rem;
+  width: 2rem;
 }
 .nav__logo .logo-color {
   display: none;
