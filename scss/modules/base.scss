@@ -3,7 +3,7 @@
   font-family: 'Poiret One', cursive;
   font-style: normal;
   font-weight: normal;
-  src: local('Poiret One'), url('https://fonts.google.com/share?selection.family=Poiret%20One');
+  src: local('Poiret One'), url('fonts/PoiretOne-Regular.ttf') format('ttf');
   }
 
 @font-face {
@@ -62,6 +62,7 @@ $header-height: 6rem;
 
     $body-font: 'Segoe UI Regular';
     $logo-font: 'Segoe UI Bold';
+    $poiret-font: 'Poiret One' cursive;
     $biggest-font-size: 8rem;
     $big-font-size: 4rem;
     $h2-font-size: 1.25rem;

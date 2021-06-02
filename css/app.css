@@ -4,7 +4,7 @@
   font-family: "Poiret One", cursive;
   font-style: normal;
   font-weight: normal;
-  src: local("Poiret One"), url("https://fonts.google.com/share?selection.family=Poiret%20One");
+  src: local("Poiret One"), url("fonts/PoiretOne-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Segoe UI Regular";
@@ -266,7 +266,7 @@ input::placeholder {
   flex-direction: column;
 }
 .nav__logo .logo-blanco {
-  width: 2rem;
+  width: 9rem;
 }
 .nav__logo .logo-color {
   display: none;
@@ -317,7 +317,7 @@ input::placeholder {
   }
   .nav__logo .logo-color {
     display: block;
-    width: 7rem;
+    width: 12rem;
     margin-left: 2rem;
   }
   .nav__toggle {
@@ -816,7 +816,7 @@ input::placeholder {
   width: 100%;
   text-align: center;
   top: 20%;
-  font-family: "Segoe UI Bold";
+  font-family: "Poiret One" cursive;
   font-size: 4rem;
   color: #7135f22b;
 }
@@ -1019,7 +1019,7 @@ input::placeholder {
   .main-section__content--back-title {
     left: 0%;
     top: -10%;
-    font-family: "Segoe UI Bold";
+    font-family: "Poiret One" cursive;
     font-size: 8rem;
   }
   .main-section__content--info-title {
@@ -1766,7 +1766,7 @@ input::placeholder {
   width: 100%;
   text-align: center;
   top: 20%;
-  font-family: "Segoe UI Bold";
+  font-family: "Poiret One" cursive;
   font-size: 4rem;
   color: #7135f22b;
 }
@@ -1977,7 +1977,7 @@ input::placeholder {
   .ser-creador-section__content--back-title {
     left: 0%;
     top: -10%;
-    font-family: "Segoe UI Bold";
+    font-family: "Poiret One" cursive;
     font-size: 8rem;
   }
   .ser-creador-section__content--info-title {
