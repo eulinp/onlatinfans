@@ -42,6 +42,9 @@
                 }
 
             }
+            & select[multiple]{
+                height: 6rem;
+            }
         }
     }
 

@@ -1237,6 +1237,9 @@ input::placeholder {
 .creadores-section__buscar-creadores__selects select option {
   font-weight: bold;
 }
+.creadores-section__buscar-creadores__selects select[multiple] {
+  height: 6rem;
+}
 .creadores-section__img {
   position: absolute;
   width: 100%;
