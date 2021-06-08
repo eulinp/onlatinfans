@@ -309,7 +309,8 @@
     width: 100%;
 overflow: scroll;
     .grafico{
-        width: auto;
+        width: 200%;
+        margin-left: -10rem;
         height: 40vh;
     }
 }
@@ -341,6 +342,12 @@ overflow: scroll;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
+
+                small{
+                    position: absolute;
+                    margin: -0.5rem;
+                    color: $second-color;
+                }
     
                 & select{
                     height: 2.5rem;
@@ -358,6 +365,9 @@ overflow: scroll;
                         font-weight: bold;
                     }
     
+                }
+                & select[multiple]{
+                    height: 6rem;
                 }
             }
         }
@@ -617,8 +627,11 @@ overflow: scroll;
         margin: 3rem 0;
     
         .grafico{
-            width: 100%;
+            width: 120%;
             height: auto;
+            margin-left: -20rem;
+            padding-bottom: 10rem;
+
         }
     }
 }

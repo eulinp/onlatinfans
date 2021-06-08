@@ -2,7 +2,7 @@
 var mediaqueryList = window.matchMedia("(min-width: 768px)");
 
 if(mediaqueryList.matches) {
-    new ElderCarousel('.perfiles-creadores-section__perfiles__cards', { items: 3 })
+    new ElderCarousel('.perfiles-creadores-section__perfiles__cards', { items: 6 })
   }else{
     new ElderCarousel('.perfiles-creadores-section__perfiles__cards', { items: 1 })
   }

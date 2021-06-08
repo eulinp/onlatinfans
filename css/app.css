@@ -695,11 +695,6 @@ input::placeholder {
   .section-contacto__info--form {
     position: relative;
     margin-top: -5%;
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari 9+ */
-    backdrop-filter: blur(10px);
-    /* Chrome and Opera */
-    background-color: rgba(0, 0, 0, 0.15);
     width: 30%;
     border-radius: 1rem;
     padding: 0.5rem 2rem;
@@ -1474,7 +1469,8 @@ input::placeholder {
   overflow: scroll;
 }
 .influencer-section .grafico {
-  width: auto;
+  width: 200%;
+  margin-left: -10rem;
   height: 40vh;
 }
 
@@ -1507,6 +1503,11 @@ input::placeholder {
     flex-flow: row wrap;
     justify-content: center;
   }
+  .creadores-section__buscar-creadores__selects small {
+    position: absolute;
+    margin: -0.5rem;
+    color: #05ADD2;
+  }
   .creadores-section__buscar-creadores__selects select {
     height: 2.5rem;
     padding: 0rem 2rem;
@@ -1521,6 +1522,9 @@ input::placeholder {
   }
   .creadores-section__buscar-creadores__selects select option {
     font-weight: bold;
+  }
+  .creadores-section__buscar-creadores__selects select[multiple] {
+    height: 6rem;
   }
   .creadores-section__img {
     position: absolute;
@@ -1745,8 +1749,10 @@ input::placeholder {
     margin: 3rem 0;
   }
   .influencer-section .grafico {
-    width: 100%;
+    width: 120%;
     height: auto;
+    margin-left: -20rem;
+    padding-bottom: 10rem;
   }
 }
 .ser-creador-section {
