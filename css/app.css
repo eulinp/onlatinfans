@@ -266,9 +266,9 @@ input::placeholder {
   flex-direction: column;
 }
 .nav__logo .logo-blanco {
-  width: 5rem;
+  width: 12rem;
   position: absolute;
-  top: 10px;
+  top: 5px;
 }
 .nav__logo .logo-color {
   display: none;
