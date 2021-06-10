@@ -8,10 +8,11 @@
     &__content{
         width: 100%;
         padding: 1rem;
-        margin-top: 2rem;
+        margin-top: 0rem;
         
 
         &--back-title{
+            display: none;
             position: absolute;
             width: 100%;
             text-align: center;
@@ -54,6 +55,23 @@
             }
         }
 
+        &--nota{
+            padding-top: 2rem;
+            
+            h3{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            ul{
+                padding-top: .5rem;
+                padding-left: 1.5rem;
+                li{
+                    list-style:disc;
+                    padding: .3rem 0rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 
     &__img{
@@ -313,6 +331,7 @@
         &__content{
             padding-left: 3rem;
             &--back-title{
+                display: none;
                 left: 0%;
                 top: -10%;
                 font-family: $poiret-font;
@@ -320,9 +339,9 @@
             }
     
             &--info-title{
-                padding-top: 6rem;
+                padding-top: 0rem;
                 font-family: $logo-font;
-                font-size: $big-font-size;
+                font-size: 3rem;
                 line-height: 1;
             }
     
@@ -330,17 +349,35 @@
                 justify-content: center;
     
                 .button{
-                    margin: 2rem;
+                    margin: 0rem 2rem;
                 }
                 .button:hover{
                     transform: scale(1.1);
                     transition: .5s;
                 }
             }
+
+            &--nota{
+                padding-top: 2rem;
+                
+                h3{
+                    text-align: left;
+                    font-size: 2rem;
+                }
+                ul{
+                    padding-top: 1rem;
+                    padding-left: 2rem;
+                    li{
+                        list-style:disc;
+                        padding: .3rem 0rem;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
         }
     
         &__img{
-            width: 100%;
+            width: 80%;
             height: 85vh;
             z-index: $z-back;
             

@@ -266,7 +266,9 @@ input::placeholder {
   flex-direction: column;
 }
 .nav__logo .logo-blanco {
-  width: 9rem;
+  width: 5rem;
+  position: absolute;
+  top: 10px;
 }
 .nav__logo .logo-color {
   display: none;
@@ -804,9 +806,10 @@ input::placeholder {
 .main-section__content {
   width: 100%;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 .main-section__content--back-title {
+  display: none;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -842,6 +845,22 @@ input::placeholder {
 }
 .main-section__content--info-buttons .button-buscarcreador {
   background-color: #05DBF2;
+}
+.main-section__content--nota {
+  padding-top: 2rem;
+}
+.main-section__content--nota h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main-section__content--nota ul {
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+.main-section__content--nota ul li {
+  list-style: disc;
+  padding: 0.3rem 0rem;
+  font-size: 1.3rem;
 }
 .main-section__img {
   width: 100%;
@@ -1012,29 +1031,46 @@ input::placeholder {
     padding-left: 3rem;
   }
   .main-section__content--back-title {
+    display: none;
     left: 0%;
     top: -10%;
     font-family: "Poiret One" cursive;
     font-size: 8rem;
   }
   .main-section__content--info-title {
-    padding-top: 6rem;
+    padding-top: 0rem;
     font-family: "Segoe UI Bold";
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
   }
   .main-section__content--info-buttons {
     justify-content: center;
   }
   .main-section__content--info-buttons .button {
-    margin: 2rem;
+    margin: 0rem 2rem;
   }
   .main-section__content--info-buttons .button:hover {
     transform: scale(1.1);
     transition: 0.5s;
   }
+  .main-section__content--nota {
+    padding-top: 2rem;
+  }
+  .main-section__content--nota h3 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .main-section__content--nota ul {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .main-section__content--nota ul li {
+    list-style: disc;
+    padding: 0.3rem 0rem;
+    font-size: 1.3rem;
+  }
   .main-section__img {
-    width: 100%;
+    width: 80%;
     height: 85vh;
     z-index: -10;
   }
@@ -1771,6 +1807,7 @@ input::placeholder {
   margin-top: 2rem;
 }
 .ser-creador-section__content--back-title {
+  display: none;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -1984,6 +2021,7 @@ input::placeholder {
     padding-left: 3rem;
   }
   .ser-creador-section__content--back-title {
+    display: none;
     left: 0%;
     top: -10%;
     font-family: "Poiret One" cursive;
@@ -2195,7 +2233,7 @@ input::placeholder {
 }
 .aside-section__logo .logo-blanco {
   padding: 0.5rem;
-  width: 6rem;
+  width: 10rem;
 }
 .aside-section__logo .logo-color {
   display: none;
@@ -2561,7 +2599,7 @@ input::placeholder {
   }
   .aside-section__logo .logo-blanco {
     padding: 0.5rem;
-    width: 6rem;
+    width: 10rem;
   }
   .aside-section__logo .logo-color {
     display: none;
