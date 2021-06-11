@@ -864,14 +864,14 @@ input::placeholder {
 }
 .main-section__img {
   width: 100%;
-  height: 30vh;
+  height: 38vh;
   z-index: -10;
 }
 .main-section__img--principal {
   position: absolute;
   z-index: 1;
   right: 0;
-  top: 10%;
+  top: 6%;
   width: 100%;
 }
 .main-section__img--poligono1 {
@@ -1078,7 +1078,7 @@ input::placeholder {
     position: absolute;
     z-index: 1;
     right: 0;
-    top: 10%;
+    top: -10%;
     width: 60%;
   }
   .main-section__img--poligono1 {

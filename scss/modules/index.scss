@@ -76,7 +76,7 @@
 
     &__img{
         width: 100%;
-        height: 30vh;
+        height: 38vh;
         z-index: $z-back;
         
 
@@ -84,7 +84,7 @@
             position: absolute;
             z-index: $z-normal;
             right: 0;
-            top: 10%;
+            top: 6%;
             width: 100%;
             
         }
@@ -386,7 +386,7 @@
                 position: absolute;
                 z-index: $z-normal;
                 right: 0;
-                top: 10%;
+                top: -10%;
                 width: 60%;
                 
             }
