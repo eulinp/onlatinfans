@@ -780,13 +780,65 @@ input::placeholder {
   font-size: 1.5rem;
 }
 .main-section__content--nota ul {
+  width: 95%;
   padding-top: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 0rem;
 }
 .main-section__content--nota ul li {
-  list-style: disc;
-  padding: 0.3rem 0rem;
-  font-size: 1.3rem;
+  width: 30%;
+  box-shadow: -6px 0px 10px 1px #05ADD2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+  margin-left: 0;
+  position: relative;
+  transition: 0.5s;
+}
+.main-section__content--nota ul li div.texto {
+  height: 3rem;
+  width: 100%;
+  box-shadow: -6px 0px 10px 1px #05ADD2;
+  background-image: linear-gradient(to bottom right, #7135F2, #7135F2, #05ADD2);
+}
+.main-section__content--nota ul li div.texto p {
+  font-size: 0;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 1rem;
+  line-height: 0.5;
+  transition: 0.2s;
+}
+.main-section__content--nota ul li div.icono {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 0.5rem solid #7135F2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -1.5rem;
+  transition: 0.5s;
+}
+.main-section__content--nota ul li div.icono ion-icon {
+  width: 60%;
+  height: 60%;
+  color: #7135F2;
+}
+.main-section__content--nota ul li:hover {
+  width: 100%;
+}
+.main-section__content--nota ul li:hover div.texto p {
+  font-size: 1rem;
+}
+.main-section__content--nota ul li:hover div.icono {
+  transform: rotate(720deg);
+}
+.main-section__content--nota ul li:hover div.icono ion-icon {
+  width: 70%;
+  height: 70%;
 }
 .main-section__img {
   width: 100%;
@@ -987,13 +1039,23 @@ input::placeholder {
     font-size: 2rem;
   }
   .main-section__content--nota ul {
-    padding-top: 1rem;
-    padding-left: 2rem;
+    width: 60%;
   }
   .main-section__content--nota ul li {
-    list-style: disc;
-    padding: 0.3rem 0rem;
-    font-size: 1.3rem;
+    width: 10%;
+  }
+  .main-section__content--nota ul li:hover {
+    width: 100%;
+  }
+  .main-section__content--nota ul li:hover div.texto p {
+    font-size: 1rem;
+  }
+  .main-section__content--nota ul li:hover div.icono {
+    transform: rotate(720deg);
+  }
+  .main-section__content--nota ul li:hover div.icono ion-icon {
+    width: 70%;
+    height: 70%;
   }
   .main-section__img {
     width: 80%;
