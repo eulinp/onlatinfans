@@ -25,10 +25,15 @@ window.addEventListener('load', function(){
         
         if(document.querySelector('.js-example-basic-multiple')){
             $('.js-example-basic-multiple').select2({
-                placeholder: "Seleccione una categoría"
+                width: '40%',
+                placeholder: "Seleccione una categoría",
+                theme: "bootstrap4"
             });
             
-            $('.js-example-basic-single').select2();
+            $('.js-example-basic-single').select2({
+                width: '40%',
+                theme: "bootstrap4"
+            });
         }
 
 })

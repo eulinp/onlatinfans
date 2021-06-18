@@ -22,29 +22,31 @@
 
         &__selects{
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row;
             justify-content: center;
 
-            & select{
-                height: 2.5rem;
-                padding: 0rem 2rem;
-                background: $white-color;
-                padding-left: .3rem;
-                margin: 1rem;
-                margin-bottom: 1rem;
-                font-size: $normal-font-size;
-                font-weight: bold;
-                border: .5px solid black;
-                border-radius: .5rem;
+            
 
-                & option{
-                    font-weight: bold;
-                }
+            // & select{
+            //     height: 2.5rem;
+            //     padding: 0rem 2rem;
+            //     background: $white-color;
+            //     padding-left: .3rem;
+            //     margin: 1rem;
+            //     margin-bottom: 1rem;
+            //     font-size: $normal-font-size;
+            //     font-weight: bold;
+            //     border: .5px solid black;
+            //     border-radius: .5rem;
 
-            }
-            & select[multiple]{
-                height: 6rem;
-            }
+            //     & option{
+            //         font-weight: bold;
+            //     }
+
+            // }
+            // & select[multiple]{
+            //     height: 6rem;
+            // }
         }
     }
 
@@ -343,7 +345,7 @@ overflow: scroll;
             &__selects{
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: center;
+                justify-content: space-evenly;
 
                 small{
                     position: absolute;
@@ -351,31 +353,31 @@ overflow: scroll;
                     color: $second-color;
                 }
     
-                & select{
-                    height: 2.5rem;
-                    padding: 0rem 2rem;
-                    background: $white-color;
-                    padding-left: .3rem;
-                    margin: 1rem;
-                    margin-bottom: 1rem;
-                    font-size: $normal-font-size;
-                    font-weight: bold;
-                    border: .5px solid black;
-                    border-radius: .5rem;
+                // & select{
+                //     height: 2.5rem;
+                //     padding: 0rem 2rem;
+                //     background: $white-color;
+                //     padding-left: .3rem;
+                //     margin: 1rem;
+                //     margin-bottom: 1rem;
+                //     font-size: $normal-font-size;
+                //     font-weight: bold;
+                //     border: .5px solid black;
+                //     border-radius: .5rem;
                     
-                    width: 25%;
+                //     width: 25%;
     
-                    & option{
-                        font-weight: bold;
-                    }
+                //     & option{
+                //         font-weight: bold;
+                //     }
     
-                }
-                & select[multiple]{
-                    padding: 0rem 2rem;
-                    margin: 1rem;
-                    width: 25%;
-                    height: 4rem;
-                }
+                // }
+                // & select[multiple]{
+                //     padding: 0rem 2rem;
+                //     margin: 1rem;
+                //     width: 25%;
+                //     height: 4rem;
+                // }
             }
         }
     
