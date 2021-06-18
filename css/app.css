@@ -414,7 +414,7 @@ input::placeholder {
   .login-section__img::before {
     width: 100%;
     height: 104%;
-    background: url("/img/svg/inicio_sesion.svg");
+    background: url("../img/svg/inicio_sesion.svg");
     background-position: left;
     background-size: cover;
     content: "";
