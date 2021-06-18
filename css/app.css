@@ -308,7 +308,7 @@ input::placeholder {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-image: linear-gradient(to bottom right, #7135F2, #7135F2, #05ADD2);
 }
 .login-section__img--form {
