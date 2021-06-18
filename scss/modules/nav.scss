@@ -55,17 +55,18 @@
                     font-size: 1.4rem;
                     top: 0rem;
                     left: .4rem;
-                    color: $third-color;
+                    fill: $third-color;
     
                 }
                 input{
                     width: 75%;
-                    padding: 0;
+                    padding: .25rem;
                     margin: auto;
                     height: auto;
                     padding-left: 2rem;
                     border-radius: 5rem;
-                    border: 1px solid $third-color
+                    border: 1px solid $third-color;
+                    
                 }
             }
         }
@@ -140,7 +141,12 @@
                 text-align: center;
                 & label{
                     & .icon-search{
-                        color: $first-color;
+                        position: absolute !important;
+                        font-size: 1.4rem;
+                        top: 0rem;
+                        left: .4rem;
+                        fill: $first-color;
+        
                     }
                     input{
                         border: 1px solid $first-color

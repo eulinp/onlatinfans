@@ -171,15 +171,14 @@
 .perfiles-creadores-section{
     width: 100%;
     margin: auto;
-    margin-top: 8rem;
-    background: rgba(161, 161, 161, 0.274);
+    margin-top: 12rem;
+    // background: rgba(161, 161, 161, 0.274);
 
     &__perfiles{
         &__cards{
+            margin-top: 5rem;
             display: flex;
             justify-content: space-around;
-
-            height: 100vh;
             &--card:hover{
                 transform: scale(1.1);
             }
@@ -363,6 +362,8 @@ overflow: scroll;
                     font-weight: bold;
                     border: .5px solid black;
                     border-radius: .5rem;
+                    
+                    width: 25%;
     
                     & option{
                         font-weight: bold;
@@ -370,7 +371,10 @@ overflow: scroll;
     
                 }
                 & select[multiple]{
-                    height: 6rem;
+                    padding: 0rem 2rem;
+                    margin: 1rem;
+                    width: 25%;
+                    height: 4rem;
                 }
             }
         }
@@ -435,15 +439,16 @@ overflow: scroll;
     
             &--card{
                 width: 100%;
-                height: 50vh;
+                height: 300px;
                 border-radius: 2rem;
                 position: relative;
+                transition: .5s;
     
                 &--img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    border-radius: 2rem 2rem 0 0;
+                    border-radius: 8rem 8rem 0 0;
                 }
     
                 &--datos{
@@ -456,18 +461,21 @@ overflow: scroll;
                     background-color: rgba(0, 0, 0, 0.15);
                     display: flex;
                     justify-content: space-around;
-    
+                    transition: .2s;
                     &--img{
                         width: 30%;
                         margin-top: -10.5%;
                         display: flex;
                         justify-content: center;
+                        transition: .3s;
     
                         img{
                         width: 110px;
                         height: 110px;
                         border-radius: 50%;
                         object-fit: cover;
+                        transition: .5s;
+                        
                         }
                     }
     
@@ -485,9 +493,46 @@ overflow: scroll;
                         }
                         .span{
                             color: $white-color;
-                            font-size: .6rem;
+                            font-size: 0rem;
                             padding: .3rem;
                             margin-left: -1rem;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+            &--card:hover{   
+                .conoce-creadores-section__cards--card--datos{
+                    height: 50%;
+                    &--img{
+                        position: absolute;
+                        margin-top: -40.5%;
+                        width: 40%;
+
+                        img{
+                            width: 140px;
+                            height: 140px;
+                        }
+                    }
+    
+                    &--description{
+                        width: 100%;
+                        h3{
+                            text-align: center;
+                            padding: 0rem 0rem 0rem 0rem;
+                            margin-top: 1rem;
+                            font-size: 1.3rem;
+                        }
+                        h5{
+                            text-align: center;
+                            padding: 0rem;
+                            margin: 0;
+                        }
+                        .span{
+                            text-align: center;
+                            font-size: 1rem;
+                            margin: 0rem;
+                            margin-top: 2rem;
                         }
                     }
                 }
@@ -500,7 +545,7 @@ overflow: scroll;
         width: 100%;
         margin: auto;
         margin-top: 4rem;
-        background: rgba(161, 161, 161, 0.274);
+        // background: rgba(161, 161, 161, 0.274);
     
         &__perfiles{
             &__cards{
@@ -637,4 +682,32 @@ overflow: scroll;
 
         }
     }
+}
+
+
+.chevron-toggle-acordion{
+    background: $white-color;
+    padding: .5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgb(90, 90, 90);
+    cursor: pointer;
+    transition: .5s;
+    ion-icon{
+        color: $first-color;
+        font-size: 2rem;
+    }
+}    
+
+.chevron-toggle-acordion:hover{
+    background: $first-color;
+    ion-icon{
+        color: $white-color;
+    }
+}
+
+.owl-nav{
+    display: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 4rem;
 }

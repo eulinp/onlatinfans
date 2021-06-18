@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script src="js/elderCarrousel.js"></script>
     <script src="js/gsap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/select2.min.js"></script>
     <title>Buscar Creadores</title>
 </head>
 
 <body>
 
+    <div class="loader" id="loader">
+        <img src="img/svg/logo_color.svg">
+    </div>
+    
     <header class="l-header">
         <nav class="nav bd-grid">
             <div class="nav__logo">
@@ -24,8 +34,8 @@
             <div class="nav__menu" id="nav-menu">
                 <form action="">
                     <label for="search">
-                        <ion-icon class="icon-search" name="search-outline"></ion-icon>
-                        <input type="search" name="search">
+                        <svg class="icon-search" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+                        <input type="search" onsubmit="" name="search">
                     </label>
                 </form>
                 <ul class="nav__list">
@@ -61,25 +71,25 @@
             <div class="creadores-section__buscar-creadores__selects">
                 
                 
-                <small>Ctrl + click para seleccionar varias categorías</small>
-                <select name="categorias" id="categorias" multiple>
-                    <option value="">Todas las categorías</option>
-                    <option value="">Camlive</option>
-                    <option value="">Escorts</option>
-                    <option value="">Influencers</option>
-                    <option value="">Instagrammer</option>
-                    <option value="">Modelos</option>
-                    <option value="">Youtuber</option>
-                    <option value="">Otros</option>
-                </select>
+                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                    <option value="cl">Camlive</option>
+                    <option value="sc">Escorts</option>
+                    <option value="inf">Influencers</option>
+                    <option value="ins">Instagrammer</option>
+                    <option value="mod">Modelos</option>
+                    <option value="you">Youtuber</option>
+                  </select>
 
-                <select name="categorias" id="categorias">
-                    <option value="">Default: Popularidad</option>
-                    <option value="">Mas publicaciones</option>
-                    <option value="">Mas subscriptores</option>
-                    <option value="">Alfabéticamente</option>
-                    <option value="">Fecha de registro</option>
-                </select>
+
+                  <select class="js-example-basic-single" name="state">
+                    <option value="pop">Default: Popularidad</option>
+                    <option value="pub">Mas publicaciones</option>
+                    <option value="sub">Mas subscriptores</option>
+                    <option value="alp">Alfabéticamente</option>
+                    <option value="dat">Fecha de registro</option>
+                  </select>
+                 
+               
 
             </div>
         </div>
@@ -87,6 +97,8 @@
     </section>
 
     <section class="conoce-creadores-section">
+        
+        
         <h2 class="conoce-creadores-section--title">Conoce algunos de nuestros creadores onlatinfans</h2>
         <div class="conoce-creadores-section__cards">
             <div class="conoce-creadores-section__cards--card">
@@ -164,7 +176,7 @@
 
     <section class="perfiles-creadores-section">
         <div class="perfiles-creadores-section__perfiles">
-            <div class="carousel perfiles-creadores-section__perfiles__cards">
+            <div class="carousel perfiles-creadores-section__perfiles__cards owl-carousel owl-theme">
 
 
                 <div class="carousel-item perfiles-creadores-section__perfiles__cards--card">
@@ -183,7 +195,6 @@
                                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
                                 <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
                             </div>
-                        
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum maiores odio voluptas similique culpa aspernatur nisi.</p>
                         </div>
                         <div class="chevron-toggle-acordion">

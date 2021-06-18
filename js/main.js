@@ -1,16 +1,41 @@
 /////////////MENU HEADER RESPONSIVE/////////////
-const showMenu = (toggleId, navId) => {
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+var loader = gsap.timeline();
+loader.to('#loader>img', {y:-40, duration: 1, repeat: -1, ease: 'power1.inOut', yoyo:true})
+window.addEventListener('load', function(){
+    loader.to('#loader>img', {height:300,  x:1000, rotate: 640, ease: 'power1.inOut'})
+    loader.to('#loader', {x:5000, ease: 'power1.inOut', display: 'none'})
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
 
-showMenu('nav__toggle', 'nav-menu');
+    
+        if(document.querySelector('#nav__toggle')){
+            const showMenu = (toggleId, navId) => {
+                const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId)
+            
+                if(toggle && nav){
+                    toggle.addEventListener('click', ()=>{
+                        nav.classList.toggle('show')
+                    })
+                }
+            }
+            
+            showMenu('nav__toggle', 'nav-menu');
+        }
+    
+        
+        if(document.querySelector('.js-example-basic-multiple')){
+            $('.js-example-basic-multiple').select2({
+                placeholder: "Seleccione una categoría"
+            });
+            
+            $('.js-example-basic-single').select2();
+        }
+
+})
+
+
+
+
 
 
 /////////////MENU ASIDE RESPONSIVE/////////////
