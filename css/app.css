@@ -318,7 +318,7 @@ input::placeholder {
 }
 .login-section__img--form h2 {
   font-family: "Segoe UI Bold";
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   padding-top: 3rem;
   text-align: center;
@@ -346,12 +346,6 @@ input::placeholder {
   font-size: 1.25rem;
   font-weight: bold;
   padding-bottom: 1rem;
-}
-.login-section__img--form .toggle-login-register div:first-child {
-  background-color: #5116ce;
-}
-.login-section__img--form .toggle-login-register div:first-child span {
-  color: #5116ce;
 }
 .login-section__img--form .form-login {
   display: flex;
@@ -466,6 +460,13 @@ input::placeholder {
     position: relative;
   }
 }
+.link-active {
+  background-color: #5116ce !important;
+}
+.link-active span {
+  color: #5116ce !important;
+}
+
 .section-contacto {
   position: relative;
   overflow: hidden;

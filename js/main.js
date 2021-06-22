@@ -36,6 +36,56 @@ window.addEventListener('load', function(){
             });
         }
 
+        if(document.querySelector('#form-register')){
+            const formRegister = document.querySelector('#form-register');
+            const formLogin = document.querySelector('#form-login');
+            const buttonRegister = document.querySelector('.button-register');
+            const buttonLogin = document.querySelector('.button-login');
+
+
+
+
+            buttonLogin.addEventListener('click', function(){
+                this.parentElement.classList.add('link-active');
+                buttonRegister.parentElement.classList.remove('link-active');
+
+                formRegister.classList.add('d-none');
+                if(formLogin.classList.contains('d-none')){
+                    formLogin.classList.remove('d-none');
+                }
+                // gsap.to(formRegister, {x:2000,  ease: 'power1.inOut'})
+                // setTimeout(() => {
+                //     formRegister.classList.add('d-none');
+                // }, 500);
+               
+                gsap.from(formLogin, {x:-2000, ease: 'power1.inOut'})
+                gsap.to(formLogin, {x:0, ease: 'power1.inOut'})
+
+            })
+
+
+
+
+            buttonRegister.addEventListener('click', function(){
+                this.parentElement.classList.add('link-active');
+                buttonLogin.parentElement.classList.remove('link-active');
+                
+
+                formLogin.classList.add('d-none');
+                if(formRegister.classList.contains('d-none')){
+                    formRegister.classList.remove('d-none');
+                }  
+                // gsap.to(formLogin, {x:2000,  ease: 'power1.inOut'})
+                // setTimeout(() => {
+                //     formLogin.classList.add('d-none');
+                // }, 500);
+
+                gsap.from(formRegister, {x:-2000, ease: 'power1.inOut'})
+                gsap.to(formRegister, {x:0, ease: 'power1.inOut'})
+            })
+            
+        }
+
 })
 
 

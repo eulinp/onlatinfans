@@ -18,7 +18,7 @@
 
       & h2 {
         font-family: $logo-font;
-        font-size: $big-font-size;
+        font-size: 3rem;
         color: $white-color;
         padding-top: 3rem;
         text-align: center;
@@ -50,13 +50,7 @@
           }
         }
 
-        & div:first-child {
-          background-color: $first-color-two;
-
-          span {
-            color: $first-color-two;
-          }
-        }
+        
       }
 
       & .form-login {
@@ -135,6 +129,7 @@
 }
 
 
+
 @media only screen and (min-width: 768px) {
   .login-section {
     background: rgba(0, 0, 0, 0);
@@ -208,5 +203,13 @@
         
       }
     }
+  }
+}
+
+.link-active{
+  background-color: $first-color-two !important;
+
+  span {
+    color: $first-color-two !important;
   }
 }
